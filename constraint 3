@@ -1,0 +1,17 @@
+class sample;
+rand bit[4:0]a;
+constraint c1{a inside{[5:15};
+a%2==1;
+!(a==7||a==9||a==11||a=13);
+};
+endclass 
+module top;
+sample s;
+initial begin
+repeat(5)begin
+s=new();
+s.randomize();
+$display("odd values=%0d",s.a);
+end
+end
+endmodule
