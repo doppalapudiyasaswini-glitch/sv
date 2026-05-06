@@ -1,3 +1,5 @@
+//generate a constraint 2,4,6,8,10,12,14 -----
+
 class sample;
 rand int a[];
 constraint a_c{
