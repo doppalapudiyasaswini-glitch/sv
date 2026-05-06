@@ -1,3 +1,7 @@
+q)constrain a variable to only odd numbers from 5 to15but exclude consective odd value
+
+
+
 class sample;
 rand bit[4:0]a;
 constraint c1{a inside{[5:15};
